@@ -90,3 +90,44 @@ body {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
+
+.navi-visibility {
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+
+.navi-visibility .slide-icon {
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.5);
+  width: 20px;
+  height: 10px;
+  transform: translateY(-50px);
+  margin: 0 6px;
+  border-radius: 2px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+}
+
+@media (max-width: 900px) {
+  .slider {
+    width: 100%;
+  }
+
+  .slider .slide .info {
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .slider .slide .info h2 {
+    font-size: 1.8em;
+    line-height: 40px;
+  }
+
+  slider .slide .info p {
+    font-size: 0.9em;
+  }
+}
